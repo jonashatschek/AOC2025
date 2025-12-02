@@ -1,0 +1,14 @@
+C:\Users\jhats\source\repos\AOC2025\bin\Debug\net10.0\AOC2025.exe
+C:\Users\jhats\source\repos\AOC2025\bin\Debug\net10.0\AOC2025.deps.json
+C:\Users\jhats\source\repos\AOC2025\bin\Debug\net10.0\AOC2025.runtimeconfig.json
+C:\Users\jhats\source\repos\AOC2025\bin\Debug\net10.0\AOC2025.dll
+C:\Users\jhats\source\repos\AOC2025\bin\Debug\net10.0\AOC2025.pdb
+C:\Users\jhats\source\repos\AOC2025\obj\Debug\net10.0\AOC2025.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jhats\source\repos\AOC2025\obj\Debug\net10.0\AOC2025.AssemblyInfoInputs.cache
+C:\Users\jhats\source\repos\AOC2025\obj\Debug\net10.0\AOC2025.AssemblyInfo.cs
+C:\Users\jhats\source\repos\AOC2025\obj\Debug\net10.0\AOC2025.csproj.CoreCompileInputs.cache
+C:\Users\jhats\source\repos\AOC2025\obj\Debug\net10.0\AOC2025.dll
+C:\Users\jhats\source\repos\AOC2025\obj\Debug\net10.0\refint\AOC2025.dll
+C:\Users\jhats\source\repos\AOC2025\obj\Debug\net10.0\AOC2025.pdb
+C:\Users\jhats\source\repos\AOC2025\obj\Debug\net10.0\AOC2025.genruntimeconfig.cache
+C:\Users\jhats\source\repos\AOC2025\obj\Debug\net10.0\ref\AOC2025.dll
