@@ -1,5 +1,7 @@
-﻿using System.Numerics;
+﻿using System.Diagnostics.CodeAnalysis;
+using System.Numerics;
 using System.Security.Cryptography.X509Certificates;
+using System.Text.RegularExpressions;
 
 public class Day2 : IDay
 {
@@ -7,10 +9,13 @@ public class Day2 : IDay
 
     public void Run()
     {
-        var input = File.ReadAllText("Days/Day2/testInput.txt");
+        var productIdRanges = File.ReadAllText("Days/Day2/testInput.txt").Split(',');
 
-        var productIdRanges = input.Split(',');
         BigInteger sumOfInvalidIds = 0;
+        BigInteger updatedSumOfInvalidIds = 0;
+
+        var twoBlockRepeatRegex = new Regex(@"^(\d+)\1$");
+        var nBlockRepeatRegex = new Regex(@"\b(\d+)\1+\b");
 
         foreach (var range in productIdRanges)
         {
@@ -21,19 +26,17 @@ public class Day2 : IDay
             for (BigInteger i = firstId; i <= lastId; i++)
             {
                 var productString = i.ToString();
-                var productIdLength = productString.Length;
 
-                if (productIdLength % 2 == 0)
+                //p1
+                if (twoBlockRepeatRegex.IsMatch(productString))
                 {
-                    var half = productIdLength / 2;
-                    BigInteger left = BigInteger.Parse(productString.Substring(0, half));
-                    BigInteger right = BigInteger.Parse(productString.Substring(half));
+                    sumOfInvalidIds += i;
+                }
 
-
-                    if (left == right)
-                    {
-                        sumOfInvalidIds += i;
-                    }
+                //p2
+                if (nBlockRepeatRegex.IsMatch(productString))
+                {
+                    updatedSumOfInvalidIds += i;
                 }
             }
         }
@@ -43,5 +46,7 @@ public class Day2 : IDay
         // TODO: solve part 1
         Console.WriteLine($"{sumOfInvalidIds}");
         // TODO: solve part 2
+        Console.WriteLine($"{updatedSumOfInvalidIds}");
     }
+
 }
