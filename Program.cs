@@ -11,7 +11,7 @@ class Program
             .Select(t => (IDay)Activator.CreateInstance(t)!)
             .ToDictionary(d => d.Day);
 
-        Console.Write("Which day? \nPress any non numeric key to run all days.");
+        Console.Write("Which day? \nPress any non numeric key to run all days. ");
         var input = Console.ReadLine();
 
         if (!int.TryParse(input, out var dayNumber))

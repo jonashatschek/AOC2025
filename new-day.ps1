@@ -37,8 +37,10 @@ public class Day$dayPadded : IDay
         Console.WriteLine("=== Day $dayPadded ===");
 
         // TODO: solve part 1
+        Console.WriteLine($"Part 1: {}");
 
         // TODO: solve part 2
+        Console.WriteLine($"Part 2: {}");
     }
 }
 "@ | Out-File $csFile -Encoding utf8

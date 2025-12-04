@@ -68,9 +68,9 @@
         Console.WriteLine("=== Day 1 ===");
 
         // TODO: solve part 1
-        Console.WriteLine($"{part1Password}");
+        Console.WriteLine($"Part 1: {part1Password}");
 
         // TODO: solve part 2
-        Console.WriteLine($"{part2Password}");
+        Console.WriteLine($"Part 2: {part2Password}");
     }
 }

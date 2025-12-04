@@ -44,9 +44,10 @@ public class Day2 : IDay
         Console.WriteLine("=== Day 2 ===");
 
         // TODO: solve part 1
-        Console.WriteLine($"{sumOfInvalidIds}");
+        Console.WriteLine($"Part 1: {sumOfInvalidIds}");
+
         // TODO: solve part 2
-        Console.WriteLine($"{updatedSumOfInvalidIds}");
+        Console.WriteLine($"Part 2: {updatedSumOfInvalidIds}");
     }
 
 }
