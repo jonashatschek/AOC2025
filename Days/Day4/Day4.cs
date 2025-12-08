@@ -5,7 +5,7 @@
 
     public void Run()
     {
-        var input = File.ReadAllLines("Days/Day4/input.txt").ToList();
+        var input = File.ReadAllLines("Days/Day4/testInput.txt").ToList();
 
         var part1Result = SolvePart1(input);
         var part2Result = SolvePart2(input);
